@@ -1,0 +1,35 @@
+{
+  "name": "bettercss.github.io",
+  "version": "0.0.1",
+  "description": "Documentation for Bettercss",
+  "main": "index.js",
+  "keywords": [
+    "bettercss",
+    "css",
+    "documentation",
+    "toolkit"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bettercss/bettercss.github.io.git"
+  },
+  "author": "Mike Bailey <mike@bettercss.io>",
+  "maintainers": [
+    {
+      "name": "Mike Bailey",
+      "email": "mike@bettercss.io"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/bettercss/bettercss.github.io/issues"
+  },
+  "homepage": "https://github.com/bettercss/bettercss.github.io",
+  "dependencies": {},
+  "devDependencies": {
+    "glob": "^6.0.1",
+    "object-assign": "^4.0.1",
+    "resolve": "^1.1.6"
+  },
+  "scripts": {}
+}
