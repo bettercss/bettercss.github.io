@@ -7,7 +7,9 @@
 	<title>Test</title>
 
 	<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-	<link type="text/css" rel="stylesheet" href="output.css" />
+	<style type="text/css">
+		<%= styles %>
+	</style>
 </head>
 
 <body>
@@ -57,19 +59,7 @@
 						<a class="c-nav__link" href="#">Home</a><a class="c-nav__link" href="#">Docs</a><span class="c-nav__link">Flex</span>
 					</nav>
 
-					<p class="u-font-size-h2 u-margin-bottom-large">This module sets default styles for all tables, including text-alignment, width, padding, border-collapse, and border-spacing.</p>
-
-					<p>This module <mark class="u-type-mark">sets</mark> default styles for all tables,
-						including text-alignment, width, padding, border-collapse, and border-spacing.</p>
-
-					<div class="c-card c-card--example">
-						<div class="c-card__header">
-							Demo
-						</div>
-						<div class="c-card__content">
-							Code example
-						</div>
-					</div>
+					<%= content %>
 
 				</div>
 
