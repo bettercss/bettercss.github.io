@@ -1,0 +1,9 @@
+/**
+ * Overflow
+ */
+
+@media (--breakpoint-medium) {
+	.u-overflow-hidden\@medium {
+		overflow: hidden;
+	}
+}
