@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="u-overflow-hidden@medium">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Bettercss</title>
+
+	<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+	<style type="text/css">
+		<%= styles %>
+	</style>
+</head>
+
+<body>
+
+<div class="u-flex u-flex-wrap u-flex-stretch@medium u-height-100vh">
+
+	<div class="c-box c-box--dark c-box--scroll u-column-12 u-padding-top u-padding-top-remove@medium u-column-2@medium u-flex-last u-flex-first@medium u-border-top">
+
+		<div class="u-flex u-flex-wrap">
+			<% _.map(navigation, function(parent) { %>
+			<nav class="c-nav c-nav--group u-column-12">
+				<span class="c-nav__title"><%= parent.title %></span>
+				<% _.map(parent.children, function(child) { %>
+				<a class="c-nav__link<%= (child.title == doc.title) ? ' is-active' : '' %>" href="<%= child.link %>" title="<%= child.title %>"><%= child.title %></a>
+				<% }); %>
+			</nav>
+			<% }); %>
+		</div>
+
+	</div>
+
+	<div class="c-box c-box--scroll u-column-12 u-column-10@medium">
+
+		<div class="u-flex u-flex-horizontal-center@medium">
+			<div class="u-column-12 u-column-6@medium u-column-9@large">
+
+				<div class="c-box u-padding u-padding-top-large">
+					<div class="c-box u-margin-bottom">
+						<h1 class="u-margin-remove"><%= doc.title %></h1>
+						<a class="u-margin-bottom" href="<%= doc.info.link %>" target="_blank"><%= doc.info.title %></a>
+					</div>
+
+					<nav class="c-nav c-nav--breadcrumbs">
+						<a class="c-nav__link" href="#">Home</a><a class="c-nav__link" href="#">Docs</a><span class="c-nav__link"><%= doc.title %></span>
+					</nav>
+				</div>
+
+				<div class="c-box u-padding">
+					<%= doc.content %>
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+</body>
+
+</html>
