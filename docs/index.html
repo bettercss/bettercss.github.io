@@ -45,7 +45,7 @@
 			<nav class="c-nav c-nav--group u-column-12">
 				
 				
-				<a class="c-nav__link" href="/docs" title="getting started">getting started</a>
+				<a class="c-nav__link is-active" href="/docs" title="getting started">getting started</a>
 				
 			</nav>
 			
@@ -67,7 +67,7 @@
 				
 				<a class="c-nav__link" href="/docs/button" title="button">button</a>
 				
-				<a class="c-nav__link is-active" href="/docs/button-group" title="button group">button group</a>
+				<a class="c-nav__link" href="/docs/button-group" title="button group">button group</a>
 				
 				<a class="c-nav__link" href="/docs/card" title="card">card</a>
 				
@@ -145,90 +145,18 @@
 							<a class="u-display-inline-block u-margin-left-tiny u-vertical-align-middle" href="/" title="Bettercss">Bettercss</a>
 						</div>
 
-						<h1 class="u-margin-remove u-text-transform-capitalize">button group</h1>
-						
-						<a class="u-margin-bottom" href="https://github.com/bettercss/components" target="_blank">bettercss-components</a>
+						<h1 class="u-margin-remove u-text-transform-capitalize">getting started</h1>
 						
 					</div>
 
 					<nav class="c-nav c-nav--horizontal c-nav--breadcrumbs">
-						<a class="c-nav__link" href="/">Home</a><a class="c-nav__link" href="/docs">Docs</a><a class="c-nav__link" href="/docs/button-group">button group</a>
+						<a class="c-nav__link" href="/">Home</a><a class="c-nav__link" href="/docs">Docs</a>
 					</nav>
 				</div>
 
 				<div class="c-box u-padding u-margin-bottom">
-					<p class="u-text-emphasize">This library provides a base to group buttons together on a single line.</p>
+					<p>This is a how you install stuff mate.</p>
 
-<p>This library works great with the <code>button</code> library but can work without.</p>
-<div class="c-example">
-	<div class="c-example__rendered">
-		<div class="c-button-group">
-    <a class="c-button-group__item c-button" href="Button">Button</a>
-    <a class="c-button-group__item c-button" href="Button">Button</a>
-    <a class="c-button-group__item c-button" href="Button">Button</a>
-</div>
-	</div>
-	<div class="c-example__code">
-		<pre><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group__item c-button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"Button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group__item c-button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"Button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group__item c-button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"Button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-	</div>
-</div><h3 id="-c-button-group-rounded">.c-button-group--rounded</h3>
-<p>Rounds edges of the first and last button.</p>
-<div class="c-example">
-	<div class="c-example__rendered">
-		<div class="c-button-group c-button-group--rounded">
-    <a class="c-button-group__item c-button" href="Button">Button</a>
-    <a class="c-button-group__item c-button" href="Button">Button</a>
-    <a class="c-button-group__item c-button" href="Button">Button</a>
-</div>
-	</div>
-	<div class="c-example__code">
-		<pre><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group c-button-group--rounded"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group__item c-button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"Button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group__item c-button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"Button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group__item c-button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"Button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-	</div>
-</div><h3 id="-c-button-group-border">.c-button-group--border</h3>
-<p>Removes double borders when buttons have borders.</p>
-<p><code>Note: Only works for 1px borders</code></p>
-<div class="c-example">
-	<div class="c-example__rendered">
-		<div class="c-button-group c-button-group--border">
-    <a class="c-button-group__item c-button" href="Button">Button</a>
-    <a class="c-button-group__item c-button" href="Button">Button</a>
-    <a class="c-button-group__item c-button" href="Button">Button</a>
-</div>
-	</div>
-	<div class="c-example__code">
-		<pre><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group c-button-group--border"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group__item c-button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"Button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group__item c-button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"Button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group__item c-button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"Button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-	</div>
-</div><h3 id="spacing">Spacing</h3>
-<h5 id="-c-button-group-gutter-small-large-">.c-button-group--gutter-[small|large]</h5>
-<p>Adds spacing between buttons.</p>
-<div class="c-example">
-	<div class="c-example__rendered">
-		<div class="c-button-group c-button-group--gutter-small">
-    <a class="c-button-group__item c-button" href="Button">Button</a>
-    <a class="c-button-group__item c-button" href="Button">Button</a>
-    <a class="c-button-group__item c-button" href="Button">Button</a>
-</div>
-	</div>
-	<div class="c-example__code">
-		<pre><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group c-button-group--gutter-small"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group__item c-button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"Button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group__item c-button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"Button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button-group__item c-button"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"Button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-	</div>
-</div>
 				</div>
 
 				<div class="c-box flex u-padding u-margin-bottom">
