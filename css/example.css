@@ -16,4 +16,5 @@
 	background-color: #f7f7f9;
 	border: solid 1px #ccc;
 	padding: var(--spacing-unit-small);
+	overflow-x: auto;
 }
