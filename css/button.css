@@ -1,0 +1,17 @@
+/**
+ * Button
+ */
+
+.c-button--fixed {
+	position: fixed;
+	top: var(--spacing-unit-tiny);
+	right: var(--spacing-unit-tiny);
+	padding: var(--spacing-unit-tiny) var(--spacing-unit-small);
+	background-color: #000;
+	color: #fff;
+	font-size: .8rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 0;
+}
+

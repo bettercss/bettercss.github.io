@@ -6,6 +6,7 @@
 @import './nav.css';
 @import './box.css';
 @import './example.css';
+@import './button.css';
 
 @import 'bettercss-utilities';
 @import './type.css';

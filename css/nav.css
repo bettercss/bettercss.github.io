@@ -63,3 +63,13 @@
 	font-weight: bold;
 	text-decoration: none;
 }
+
+
+.c-nav--weighted .c-nav__link {
+	font-weight: bold;
+	font-size: .9rem;
+}
+
+.c-nav--weighted .c-nav__link:not(:last-child) {
+	margin-right: var(--spacing-unit);
+}
