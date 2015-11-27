@@ -1,4 +1,3 @@
-
 @import 'bettercss-base';
 @import './elements.css';
 
@@ -16,4 +15,10 @@
 @import './highlight.css';
 
 @import 'bettercss-defaults';
+
+/* Override defaults */
+:root {
+	--color-link: #000;
+}
+
 
