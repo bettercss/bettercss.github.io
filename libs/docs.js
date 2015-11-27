@@ -28,7 +28,7 @@ navigation = modules.map(function(module) {
 
 		return {
 			title: _.capitalize(lib.title),
-			link: path.join(process.cwd(), '/docs/', lib.title, '/index.html')
+			link: path.join('/docs/', lib.title, '/index.html')
 		}
 	});
 
