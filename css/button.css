@@ -12,6 +12,12 @@
 	font-size: .8rem;
 	font-weight: bold;
 	text-transform: uppercase;
-	border: 0;
+	border: solid 1px #fff;
+}
+
+.c-button--fixed:focus,
+.c-button--fixed:active,
+.c-button--fixed:hover {
+	color: #fff;
 }
 
