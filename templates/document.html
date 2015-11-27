@@ -9,7 +9,7 @@
 	<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 	<link rel="icon" type="image/png" href="/images/icon-black.png" />
 	<style type="text/css">
-		<%= styles %>
+		<%= css %>
 	</style>
 </head>
 
@@ -21,7 +21,7 @@
 
 	<div class="c-box c-box--dark c-box--scroll u-column-12 u-padding-top u-padding-top-remove@medium u-column-2@medium u-flex-last u-flex-first@medium u-border-top">
 
-		<a class="c-box u-padding-left u-padding-right u-padding-top u-padding-bottom-small" href="/">
+		<a class="c-box u-padding" href="/">
 			<svg viewBox="0 0 76.5 68.4" xml:space="preserve" width="30">
 				<path fill="#FFFFFF" d="M21.5,8.4c-0.9,0-1.6,0.2-2.1,0.5c-0.5,0.4-0.9,0.8-1.2,1.3c-0.3,0.5-0.5,1.1-0.6,1.8
 					c-0.1,0.7-0.1,1.3-0.1,1.9v11.4c0,1.9-0.3,3.3-0.9,4.5s-1.2,2-2,2.6c-0.8,0.6-1.6,1.1-2.4,1.3c-0.8,0.3-1.5,0.4-2.1,0.5v0.2
@@ -41,11 +41,11 @@
 		</a>
 
 		<div id="menu" class="u-flex u-flex-wrap">
-			<% _.map(navigation, function(parent) { %>
+			<% _.map(navigation, function(items, groupTitle) { %>
 			<nav class="c-nav c-nav--group u-column-12">
-				<% if (parent.title)  { %><span class="c-nav__title"><%= parent.title %></span><% } %>
-				<% _.map(parent.children, function(child) { %>
-				<a class="c-nav__link<%= (child.title == doc.title) ? ' is-active' : '' %>" href="<%= child.link %>" title="<%= child.title %>"><%= child.title %></a>
+				<% if (groupTitle != 'page')  { %><span class="c-nav__title"><%= groupTitle %></span><% } %>
+				<% _.map(items, function(item) { %>
+				<a class="c-nav__link<%= (item.title == title) ? ' is-active' : '' %>" href="<%= item.url %>" title="<%= item.title %>"><%= item.title %></a>
 				<% }); %>
 			</nav>
 			<% }); %>
@@ -82,17 +82,19 @@
 							<a class="u-display-inline-block u-margin-left-tiny u-vertical-align-middle" href="/" title="Bettercss">Bettercss</a>
 						</div>
 
-						<h1 class="u-margin-remove"><%= doc.title %></h1>
-						<a class="u-margin-bottom" href="<%= doc.info.link %>" target="_blank"><%= doc.info.title %></a>
+						<h1 class="u-margin-remove u-text-transform-capitalize"><%= title %></h1>
+						<% if (type != 'page') { %>
+						<a class="u-margin-bottom" href="<%= package.link %>" target="_blank"><%= package.title %></a>
+						<% } %>
 					</div>
 
-					<nav class="c-nav c-nav--breadcrumbs">
-						<a class="c-nav__link" href="/">Home</a><a class="c-nav__link" href="/docs">Docs</a><span class="c-nav__link"><%= doc.title %></span>
+					<nav class="c-nav c-nav--horizontal c-nav--breadcrumbs">
+						<% _.map(breadcrumb, function(item) { %><a class="c-nav__link" href="<%= item.link %>"><%= item.title %></a><% }); %>
 					</nav>
 				</div>
 
 				<div class="c-box u-padding u-margin-bottom">
-					<%= doc.content %>
+					<%= content %>
 				</div>
 
 				<div class="c-box flex u-padding u-margin-bottom">

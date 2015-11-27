@@ -37,13 +37,13 @@
     "glob": "^6.0.1",
     "highlight.js": "^8.9.1",
     "lodash": "^3.10.1",
-    "marked": "^0.3.5",
-    "resolve": "^1.1.6"
+    "marked": "^0.3.5"
   },
   "scripts": {
     "css": "bettercss ./css/index.css ./css/bettercss.css",
     "css:min": "cssnano ./css/bettercss.css ./css/bettercss.min.css --no-autoprefixer",
-    "docs:build": "node ./libs/docs.js",
-    "release": "npm run css && npm run css:min && npm run docs:build"
+    "docs:build": "node ./libs/build.js",
+    "cleanup": "node ./libs/cleanup.js",
+    "release": "npm run css && npm run css:min && npm run docs:build && npm run cleanup"
   }
 }
