@@ -22,6 +22,7 @@
 
 .c-nav--group .c-nav__link {
 	color: #fff;
+	text-transform:capitalize;
 }
 
 .c-nav--group .c-nav__link.is-active,
@@ -43,10 +44,10 @@
 }
 
 .c-nav--breadcrumbs .c-nav__link {
-	display: inline-block;
 	padding-right: var(--spacing-unit-small);
 	color: #000;
 	text-decoration: none;
+	text-transform:capitalize;
 }
 
 .c-nav--breadcrumbs .c-nav__link:hover {
