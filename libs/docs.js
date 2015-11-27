@@ -10,6 +10,7 @@ var modules = require('./modules.js');
 var base;
 var libs;
 var navigation;
+var gettingStarted;
 
 // Setup marked/markedExample
 var renderer = new marked.Renderer();
@@ -28,7 +29,7 @@ navigation = modules.map(function(module) {
 
 		return {
 			title: _.capitalize(lib.title),
-			link: path.join('/docs/', lib.title, '/index.html')
+			link: path.join('/docs/', lib.title)
 		}
 	});
 
@@ -38,7 +39,23 @@ navigation = modules.map(function(module) {
 	}
 });
 
-// Write lib files
+// Getting started
+
+navigation.unshift({
+	title: null,
+	children: [
+		{
+			title: 'Bettercss',
+			link: ''
+		},
+		{
+			title: 'Getting Started',
+			link: ''
+		}
+	]
+});
+
+// Create lib list
 var libs = modules.map(function(module) {
 	return module.libs;
 })
@@ -48,7 +65,7 @@ var libs = modules.map(function(module) {
 
 // Write docs
 libs.forEach(function(lib) {
-	var pathToDoc = path.join(process.cwd(), '/docs/', lib.title, 'index.html');
+	var pathToDoc = path.join(process.cwd(), '/docs/', lib.title, '/index.html');
 	var body;
 
 	body = base.template({
