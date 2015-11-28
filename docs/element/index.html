@@ -52,7 +52,7 @@
 			<nav class="c-nav c-nav--group u-column-12">
 				<span class="c-nav__title">bettercss-base</span>
 				
-				<a class="c-nav__link" href="/docs/element" title="element">element</a>
+				<a class="c-nav__link is-active" href="/docs/element" title="element">element</a>
 				
 				<a class="c-nav__link" href="/docs/reset" title="reset">reset</a>
 				
@@ -75,7 +75,7 @@
 				
 				<a class="c-nav__link" href="/docs/feedback" title="feedback">feedback</a>
 				
-				<a class="c-nav__link is-active" href="/docs/form" title="form">form</a>
+				<a class="c-nav__link" href="/docs/form" title="form">form</a>
 				
 				<a class="c-nav__link" href="/docs/label" title="label">label</a>
 				
@@ -143,128 +143,23 @@
 							<a class="u-display-inline-block u-margin-left-tiny u-vertical-align-middle" href="/" title="Bettercss">Bettercss</a>
 						</div>
 
-						<h1 class="u-margin-remove u-text-transform-capitalize">form</h1>
+						<h1 class="u-margin-remove u-text-transform-capitalize">element</h1>
 						
-						<a class="u-margin-bottom" href="https://github.com/bettercss/components" target="_blank">bettercss-components</a>
+						<a class="u-margin-bottom" href="https://github.com/bettercss/base" target="_blank">bettercss-base</a>
 						
 					</div>
 
 					<nav class="c-nav c-nav--horizontal c-nav--breadcrumbs">
-						<a class="c-nav__link" href="/">Home</a><a class="c-nav__link" href="/docs">Docs</a><a class="c-nav__link" href="/docs/form">form</a>
+						<a class="c-nav__link" href="/">Home</a><a class="c-nav__link" href="/docs">Docs</a><a class="c-nav__link" href="/docs/element">element</a>
 					</nav>
 				</div>
 
 				<div class="c-box u-padding u-margin-bottom">
-					<p class="u-text-emphasize">This library is a base for building forms.</p>
+					<p class="u-text-emphasize">This library sets basic styles for common html elements.</p>
 
-<p>Stacked style forms are the default behaviour for this library, but any form layout should be achievable.</p>
-<div class="c-example">
-	<div class="c-example__rendered">
-		<form class="c-form">
-    <fieldset class="c-form__fieldset">
-        <div class="c-form__field">
-            <label class="c-form__label" for="username">Username</label>
-            <input id="username" class="c-form__input" type="text" name="username" value="" placeholder="" />
-        </div>
+<p>When starting your new project using Bettercss, You&#39;ll need to make sure you have some base element styles set first. Much like a reset does this library provides stylings for some of the following tags <code>html, headings, tables and links</code>. This ensures your project starts with the best possibly foundations for the rest of your project to work from.</p>
+<p>We suggest you use our <code>base module</code> but it&#39;s not requirement, you can read more about project builds in our <a href="http://bettercss.github.io/docs/">Getting Started Guide</a></p>
 
-        <div class="c-form__field">
-            <label class="c-form__label" for="password">Password</label>
-            <input id="password" class="c-form__input" type="password" name="password" value="" placeholder="" />
-        </div>
-
-        <div class="c-form__field">
-            <label class="c-form__label" for="select">Select</label>
-            <select id="select" class="c-form__select" name="select">
-                <option>One</option>
-                <option>Two</option>
-                <option>Three</option>
-            </select>
-        </div>
-
-
-        <div class="c-form__field">
-            <div class="c-form__checkbox">
-                <input id="checkbox" class="c-form__input" type="checkbox" name="checkit" value="" placeholder="" />
-                <label class="c-form__label" for="checkbox">Check</label>
-            </div>
-        </div>
-
-
-        <div class="c-form__field">
-            <button class="c-button" type="submit">Submit</button>
-        </div>
-
-    </fieldset>
-</form>
-	</div>
-	<div class="c-example__code">
-		<pre><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__fieldset"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__field"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__label"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"username"</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"username"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__input"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"username"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">""</span> /&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__field"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__label"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"password"</span>&gt;</span>Password<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"password"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__input"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"password"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"password"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">""</span> /&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__field"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__label"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"select"</span>&gt;</span>Select<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"select"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__select"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"select"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>One<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Two<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__field"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__checkbox"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__input"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"checkit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">""</span> /&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__label"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>Check<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__field"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></pre>
-	</div>
-</div><h2 id="inline">Inline</h2>
-<p>You can use the <code>flex utility</code> to achieve inline forms.</p>
-<div class="c-example">
-	<div class="c-example__rendered">
-		<form class="c-form">
-    <fieldset class="c-form__fieldset">
-        <div class="c-form__field">
-            <div class="u-flex u-flex-vertical-center u-gutter">
-                <label class="c-form__label u-margin-right" for="username">Username</label>
-                <input id="username" class="c-form__input u-margin-right" type="text" name="username" value="" placeholder="" />
-                <button class="c-button" type="submit">Submit</button>
-            </div>
-        </div>
-    </fieldset>
-</form>
-	</div>
-	<div class="c-example__code">
-		<pre><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__fieldset"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__field"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"u-flex u-flex-vertical-center u-gutter"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__label u-margin-right"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"username"</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"username"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-form__input u-margin-right"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"username"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">""</span> /&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"c-button"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></pre>
-	</div>
-</div>
 				</div>
 
 				<div class="c-box flex u-padding u-margin-bottom">

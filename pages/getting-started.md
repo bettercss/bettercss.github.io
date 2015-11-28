@@ -1,1 +1,1 @@
-This is a how you install stuff mate.
+Getting started guide coming soon.
