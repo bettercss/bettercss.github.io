@@ -2,13 +2,18 @@ var fs = require('fs');
 var path = require('path');
 var highlight = require('highlight.js');
 var _ = require('lodash');
-var template = _.template(fs.readFileSync(path.join(__dirname, '../templates/example.html'), 'utf8'));
+var templates = {
+	html: _.template(fs.readFileSync(path.join(__dirname, '../templates/example-html.html'), 'utf8')),
+	default: _.template(fs.readFileSync(path.join(__dirname, '../templates/example.html'), 'utf8'))
+};
 
 module.exports = function(code, lang) {
-	var result = '<pre>' + highlight.highlightAuto(code, [lang]).value + '</pre>';
+	var result = templates.default({
+		code: highlight.highlightAuto(code, [lang]).value
+	});
 
 	if (lang && lang.match(/^html/)) {
-		result = template({
+		result = templates.html({
 			rendered: code,
 			code: highlight.highlight(lang, code).value
 		});

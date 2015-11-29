@@ -6,15 +6,20 @@
 	margin-bottom: var(--spacing-unit);
 }
 
-.c-example__rendered {
+.c-example--html .c-example__rendered {
 	border: solid 1px #ccc;
 	border-bottom: 0;
 	padding: var(--spacing-unit-small);
 }
 
-.c-example__code {
+.c-example--html .c-example__code {
 	background-color: #f7f7f9;
 	border: solid 1px #ccc;
 	padding: var(--spacing-unit-small);
 	overflow-x: auto;
+}
+
+.c-example---minimal {
+	background-color: #f2f2f2;
+	padding: var(--spacing-unit-small);
 }
