@@ -16,9 +16,8 @@
 
 @import 'bettercss-defaults';
 
-/* Override defaults */
 :root {
-	--color-link: #000;
+	--color-link: #4078c0;
 }
 
 

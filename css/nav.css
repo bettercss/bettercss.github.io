@@ -69,6 +69,7 @@
 .c-nav--weighted .c-nav__link {
 	font-weight: bold;
 	font-size: .9rem;
+	color: #000;
 }
 
 .c-nav--weighted .c-nav__link:not(:last-child) {
