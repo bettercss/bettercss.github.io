@@ -67,6 +67,6 @@ bettercss input.css output.css
 
 The Bettercss preprocessor is a requirement when processing as we use some css that isn’t supported in the browser currently that needs to be transpiled.
 
-You can see more usage and how you can build on top of the preprocessor [here](https://github.com/bettercss/preprocessor)
+You can see more usage and how you can build on top of the preprocessor [here](https://github.com/bettercss/preprocessor).
 
 
