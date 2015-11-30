@@ -2,6 +2,23 @@ var path = require('path');
 
 module.exports = [
     {
+        title: 'bettercss',
+        safeName: 'bettercss',
+        url: '/',
+        destination: path.join(process.cwd(), '/index.html'),
+        src: '',
+        type: 'index',
+        package: {
+            title: 'page'
+        },
+        breadcrumb: [
+            {
+                title: 'Home',
+                link: '/'
+            }
+        ]
+    },
+    {
         title: 'getting started',
         safeName: 'docs',
         url: '/docs',
