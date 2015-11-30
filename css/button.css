@@ -2,17 +2,15 @@
  * Button
  */
 
+.c-button--primary {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
 .c-button--fixed {
 	position: fixed;
 	top: var(--spacing-unit-tiny);
 	right: var(--spacing-unit-tiny);
-	padding: var(--spacing-unit-tiny) var(--spacing-unit-small);
-	background-color: #000;
-	color: #fff;
-	font-size: .8rem;
-	font-weight: bold;
-	text-transform: uppercase;
-	border: solid 1px #fff;
 }
 
 .c-button--fixed:focus,
@@ -20,4 +18,24 @@
 .c-button--fixed:hover {
 	color: #fff;
 }
+
+.c-button--cutter {
+	background-color: #000;
+	border: solid 1px #fff;
+	color: #fff;
+}
+
+.c-button--cutter:focus,
+.c-button--cutter:active,
+.c-button--cutter:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.c-button--small {
+	font-size: .8rem;
+	padding: var(--spacing-unit-tiny) var(--spacing-unit-small);
+}
+
+
 

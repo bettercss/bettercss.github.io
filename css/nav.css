@@ -65,13 +65,19 @@
 	text-decoration: none;
 }
 
+.c-nav--gutter .c-nav__link:not(:last-child) {
+	margin-right: var(--spacing-unit);
+}
 
 .c-nav--weighted .c-nav__link {
 	font-weight: bold;
 	font-size: .9rem;
-	color: #000;
 }
 
-.c-nav--weighted .c-nav__link:not(:last-child) {
-	margin-right: var(--spacing-unit);
+.c-nav--light .c-nav__link {
+	color: #ccc;
+}
+
+.c-nav--dark .c-nav__link {
+	color: #ccc;
 }

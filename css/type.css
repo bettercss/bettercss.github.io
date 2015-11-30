@@ -4,8 +4,16 @@
 
 /* Temp solution */
 
-.u-color-light {
+.u-text-color-light {
 	color: #fff !important;
+}
+
+.u-text-color-dark {
+	color: #000 !important;
+}
+
+.u-text-color-middle {
+	color: #ccc;
 }
 
 .u-text-emphasize {
