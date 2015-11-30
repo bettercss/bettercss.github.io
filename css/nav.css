@@ -74,10 +74,10 @@
 	font-size: .9rem;
 }
 
-.c-nav--light .c-nav__link {
+.c-nav--medium .c-nav__link {
 	color: #ccc;
 }
 
 .c-nav--dark .c-nav__link {
-	color: #ccc;
+	color: #000;
 }
