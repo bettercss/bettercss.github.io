@@ -44,6 +44,6 @@
     "css:min": "cssnano ./css/bettercss.css ./css/bettercss.min.css --no-autoprefixer",
     "docs:build": "node ./libs/build.js",
     "cleanup": "node ./libs/cleanup.js",
-    "release": "npm run css && npm run css:min && npm run docs:build && npm run cleanup"
+    "dist": "npm run css && npm run css:min && npm run docs:build && npm run cleanup"
   }
 }
