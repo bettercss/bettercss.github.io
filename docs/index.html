@@ -153,8 +153,8 @@
 				</div>
 
 				<div class="c-box u-padding u-margin-bottom">
-					<p>Bettercss is a css toolkit that provides libraries for you to include in your css. Once included provides a base for which you can extend and build your css upon.</p>
-<p>The toolkit will never boast itself as a framework nor a complete solution. The compiled source provided is to be used for rapid prototyping, and should not to be included as a final solution unless your going for a seriously minimal styling.</p>
+					<p>Bettercss is a css toolkit that provides libraries for you to include in your css, once included provides a base for which you can extend and build your css upon.</p>
+<p>The toolkit will never boast itself as a framework nor a complete solution. The compiled source provided is to be used for rapid prototyping, and should not to be included as a final solution unless your going for a seriously minimal style.</p>
 <h2 id="install">Install</h2>
 <p>You can download or install the source from one of the following locations.</p>
 <div class="c-example c-example---minimal">
@@ -163,7 +163,7 @@
 
 git <span class="hljs-built_in">clone</span> git+https://github.com/bettercss/bettercss.git</pre>
 	</div>
-</div><p><em>Note: bower version and zip will be coming soon</em></p>
+</div><p><em>Note: zip will be coming soon.</em></p>
 <h2 id="usage">Usage</h2>
 <p>Create yourself a source file and use the following load order when building your project.</p>
 <div class="c-example c-example---minimal">
@@ -180,7 +180,7 @@ git <span class="hljs-built_in">clone</span> git+https://github.com/bettercss/be
 <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'bettercss-utilities'</span></span>;</pre>
 	</div>
 </div><p>It’s recommend that you use this load order as it limits the specificity problems you may encounter. Starting with the less specific and working down to the more specific.</p>
-<p><em>Note: The beauty of the toolkit is you don’t have to follow this order and can change when required</em></p>
+<p><em>Note: The beauty of the toolkit is you don’t have to follow this order and can change if required.</em></p>
 <h3 id="single-library-usage">Single Library Usage</h3>
 <p>Only include what&#39;s needed for your project. The default behaviour for the toolkit is to include everything, but you can include single libraries and exclude the ones you don’t by doing the following:</p>
 <div class="c-example c-example---minimal">
@@ -196,7 +196,7 @@ git <span class="hljs-built_in">clone</span> git+https://github.com/bettercss/be
 	</div>
 </div><p>We recommend you always include the base module as it gives your project the best possible start, but nothing is mandatory you can include your own base.</p>
 <h2 id="processing-transpiling-">Processing (Transpiling)</h2>
-<p>The toolkit provides it’s own preprocessor built on top of the powerful <a href="https://github.com/postcss/postcss">PostCSS</a>. This allows you to be closer to the css specifications and use future css features now. Once all browsers implement the specifications we can then remove the plugins usage from the preprocessor reducing the dependency coupling and processing time. This is something we could not do with SCSS or Less.</p>
+<p>The toolkit provides it’s own preprocessor built on top of the powerful <a href="https://github.com/postcss/postcss">PostCSS</a>. This allows you to sit closer to the css specifications and use future css features now. Once all browsers implement the specifications we can then remove the plugins usage from the preprocessor reducing the dependency coupling and processing time. This is something we could not do with SCSS or Less.</p>
 <div class="c-example c-example---minimal">
 	<div class="c-example__code">
 		<pre>npm install -g bettercss-preprocessor

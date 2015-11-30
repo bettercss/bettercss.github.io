@@ -1,6 +1,6 @@
-Bettercss is a css toolkit that provides libraries for you to include in your css. Once included provides a base for which you can extend and build your css upon.
+Bettercss is a css toolkit that provides libraries for you to include in your css, once included provides a base for which you can extend and build your css upon.
 
-The toolkit will never boast itself as a framework nor a complete solution. The compiled source provided is to be used for rapid prototyping, and should not to be included as a final solution unless your going for a seriously minimal styling.
+The toolkit will never boast itself as a framework nor a complete solution. The compiled source provided is to be used for rapid prototyping, and should not to be included as a final solution unless your going for a seriously minimal style.
 
 ## Install
 
@@ -11,7 +11,7 @@ npm install bettercss
 
 git clone git+https://github.com/bettercss/bettercss.git
 ```
-*Note: bower version and zip will be coming soon*
+*Note: zip will be coming soon.*
 
 ## Usage
 
@@ -32,7 +32,7 @@ Create yourself a source file and use the following load order when building you
 
 It’s recommend that you use this load order as it limits the specificity problems you may encounter. Starting with the less specific and working down to the more specific.
 
-*Note: The beauty of the toolkit is you don’t have to follow this order and can change when required*
+*Note: The beauty of the toolkit is you don’t have to follow this order and can change if required.*
 
 ### Single Library Usage
 
@@ -55,7 +55,7 @@ We recommend you always include the base module as it gives your project the bes
 
 ## Processing (Transpiling)
 
-The toolkit provides it’s own preprocessor built on top of the powerful [PostCSS](https://github.com/postcss/postcss). This allows you to be closer to the css specifications and use future css features now. Once all browsers implement the specifications we can then remove the plugins usage from the preprocessor reducing the dependency coupling and processing time. This is something we could not do with SCSS or Less.
+The toolkit provides it’s own preprocessor built on top of the powerful [PostCSS](https://github.com/postcss/postcss). This allows you to sit closer to the css specifications and use future css features now. Once all browsers implement the specifications we can then remove the plugins usage from the preprocessor reducing the dependency coupling and processing time. This is something we could not do with SCSS or Less.
 
 ```sh
 npm install -g bettercss-preprocessor
